@@ -1,0 +1,79 @@
+body{
+    overflow-x: hidden;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "latto", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666
+}
+.img1, .img2, .img3 , .img4{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.img1{
+    background-image: url(mountains.jpg);
+    min-height: 100%;
+}
+.img2{
+    background-image: url(pexels-eric-sanman-1365425.jpg);
+    min-height:  400px;
+}
+.img3{
+    background-image: url(snowboarding.jpg);
+    min-height: 400px;
+}
+.img4{
+    background-image: url(pexels-suellen-baker-6763951.jpg);
+    min-height: 400px;
+}
+.section{
+    text-align: center;
+    padding: 1px 1px;
+}
+.section-first{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-two{
+    background-color: #282e42;
+    color: #ddd;
+}
+.section-three{
+    background-color: #282e42;
+    color: #ddd;
+}
+.section-fourth{
+    background-color: #282e42;
+    color: #ddd;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;  /*horizontal spacing between each letter of the word */
+    text-transform: uppercase;
+}
+.ptext , .border{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+.ptext , .border.trans{
+    background-color: transparent;
+}
+@media(max-width : 550px){
+    .img1 , .img2 , .img3 , .img4{
+        background-attachment: scroll;
+    }
+}
